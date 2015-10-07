@@ -96,6 +96,7 @@ BackboneBootstrapModals.ConfirmationModal = BackboneBootstrapModals.BaseModal.ex
         if (this.onConfirm.call(this, e) !== false) {
             this.hide();
         }
+        e.currentTarget.disabled = false;
     } else {
         this.hide();
     }
